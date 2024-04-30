@@ -46,17 +46,22 @@ function App() {
 
   return (
     <div className='body-div'>
-      <form onSubmit={submitHendler}>
-        <input onChange={inputHendler} name='firstName' type="text" placeholder='First Name'/>
-        {useFormError.firstName && (<span className='error'>{useFormError.firstName}</span>)}
-        <input onChange={inputHendler} name='lastName' type="text" placeholder='Last Name'/>
-        {useFormError.lastName && (<span className='error'>{useFormError.lastName}</span>)}
-        <input onChange={inputHendler} name='emailAddress' type="text" placeholder='Email Address'/>
-        {useFormError.email && (<span className='error'>{useFormError.email}</span>)}
-        <input onChange={inputHendler} name='password' type="password" placeholder='Password'/>
-        {useFormError.password && <span className='error'>{useFormError.password}</span>}
-        <button type='submit'>CLAIM YOUR FREE TRIAL</button>
-      </form>
+      <div className="form-div">
+        <form onSubmit={submitHendler}>
+          <input onChange={inputHendler} name='firstName' type="text" placeholder='First Name'/>
+          {useFormError.firstName && (<span className='error'>{useFormError.firstName}</span>)}
+          <input onChange={inputHendler} name='lastName' type="text" placeholder='Last Name'/>
+          {useFormError.lastName && (<span className='error'>{useFormError.lastName}</span>)}
+          <input onChange={inputHendler} name='emailAddress' type="text" placeholder='Email Address'/>
+          {useFormError.email && (<span className='error'>{useFormError.email}</span>)}
+          <input onChange={inputHendler} name='password' type="password" placeholder='Password'/>
+          {useFormError.password && <span className='error'>{useFormError.password}</span>}
+          <button type='submit'>CLAIM YOUR FREE TRIAL</button>
+          <p className='button-instruction'>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+      </div>
+      
+      
     </div>
   )
 }
