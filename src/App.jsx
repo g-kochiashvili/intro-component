@@ -46,6 +46,11 @@ function App() {
 
   return (
     <div className='body-div'>
+      <h1 className='title'>Learn to code by watching others</h1>
+      <p className='description'>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+      <div className="free-trial-div">
+        <p className='free-trial'><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
       <div className="form-div">
         <form onSubmit={submitHendler}>
           <input onChange={inputHendler} name='firstName' type="text" placeholder='First Name'/>

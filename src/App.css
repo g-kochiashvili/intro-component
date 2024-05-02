@@ -53,6 +53,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #FF7979;
   background-image: url(./assets/bg-intro-mobile.png);
   font-family: "Roboto", sans-serif;
@@ -104,5 +105,48 @@ button:hover{
 .button-instruction span{
   color: #FF7979;
   font-weight: bold;
+}
+.free-trial-div{
+  background-color: #5E54A4;
+  width: 327px;
+  height: 88px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.free-trial{
+  color: #ffff;
+  font-size: 15px;
+  width: 194px;
+  text-align: center;
+  letter-spacing: 0.27px;
+  line-height: 26px;
+}
+.free-trial span{
+  font-weight: bold;
+
+}
+
+.title, .description {
+  color: #ffff;
+  text-align: center;
+  width: 327px;
+}
+.title{
+  font-size: 28px;  
+  line-height: 36px;
+  letter-spacing: 0.29px;
+  height: 80px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+.description{
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 64px;
 }
 
